@@ -36,7 +36,6 @@ class App extends Component {
     calculate = () => {
         try {
             this.setState({
-                // eslint-disable-next-line
                 result: (eval(this.state.result) || "0" ) + ""
             })
         } catch (error) {
@@ -53,11 +52,6 @@ class App extends Component {
         })
     };
 
-    backspace = () => {
-        this.setState({
-            result: this.state.result.slice(0, -1)
-        })
-    };
 
     render() {
         return (
