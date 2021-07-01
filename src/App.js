@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import ResultComponent from './components/Result';
 import Calculator from './components/calc';
-// import KeyPadComponent from "./components/Calculator";
 
 class App extends Component {
     constructor(){
@@ -59,7 +58,6 @@ class App extends Component {
                 <div className="calculator-body">
                     <h1>React Calculator</h1>
                     <ResultComponent result={this.state.result}/>
-                    {/* <KeyPadComponent onClick={this.onClick}/> */}
                     <Calculator onClick={this.onClick}/>
                 </div>
             </div>
